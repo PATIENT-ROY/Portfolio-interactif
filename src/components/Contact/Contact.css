@@ -1,0 +1,61 @@
+.section {
+  padding: 2rem;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  transition: background 0.5s ease-in-out; 
+  animation: backgroundChange 5s ease-in-out infinite alternate;  
+}
+
+.container {
+  max-width: 100%;  
+  width: 800px;  
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);  
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+  box-sizing: border-box; 
+  
+}
+
+
+
+.title-1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+}
+
+.content-list__item {
+  margin-bottom: 1.5rem;
+  flex-basis: 100%;
+}
+
+.title-2 {
+  color: #fff;
+}
+
+a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #c0392b;
+}
+
+/* Анимация плавного перехода фона */
+@keyframes backgroundChange {
+  0% {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  }
+  100% {
+    background: linear-gradient(135deg, #4ca1af, #2c3e50);
+  }
+}
+
